@@ -66,6 +66,17 @@ export default function Home() {
   const [color3, setColor3] = useState("#BFBFBF")
   const [color4, setColor4] = useState("#595959")
   const [color5, setColor5] = useState("#BFBFBF")
+
+  function Change(){
+    let getRandomNumber = Math.floor(Math.random() * palettes.length)
+    const copiedPalette = palettes[getRandomNumber]
+    setColor1(copiedPalette.Color1)
+    setColor2(copiedPalette.Color2) 
+    setColor3(copiedPalette.Color3) 
+    setColor4(copiedPalette.Color4) 
+    setColor5(copiedPalette.Color5)
+  }
+
   return (
     <div className='flex h-screen' >
       <Algo style={color1} >
@@ -75,6 +86,7 @@ export default function Home() {
         {color2}
       </Algo>
       <Algo style={color3} >
+        <button onClick={Change} >Change</button>
         {color3}
       </Algo>
       <Algo style={color4} >
