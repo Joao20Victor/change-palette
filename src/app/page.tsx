@@ -1,6 +1,6 @@
 'use client'
 import {useState} from 'react'
-import Algo from "./components/algo"
+import Algo from "./components/Color"
 
 export default function Home() {
   const palettes = [
@@ -79,20 +79,20 @@ export default function Home() {
 
   return (
     <div className='flex h-screen' >
-      <Algo style={color1} >
+      <Algo bgcolor={color1} >
         {color1}
       </Algo>
-      <Algo style={color2} >
+      <Algo bgcolor={color2} >
         {color2}
       </Algo>
-      <Algo style={color3} >
+      <Algo bgcolor={color3} >
         <button onClick={Change} >Change</button>
         {color3}
       </Algo>
-      <Algo style={color4} >
+      <Algo bgcolor={color4} >
         {color4}
       </Algo>
-      <Algo style={color5} >
+      <Algo bgcolor={color5} >
         {color5}
       </Algo>
     </div>
