@@ -87,7 +87,7 @@ export default function Home() {
       </Color>
       <Color bgcolor={color3} >
         <button className="p-3 bg-slate-200 text-black rounded" onClick={Change} >Change</button>
-        <h1 className="bg-slate-200 p-2 rounded" >{color3}</h1>
+        <h1 className="bg-slate-200 p-2 rounded mt-4" >{color3}</h1>
       </Color>
       <Color bgcolor={color4} >
         <h1 className="bg-slate-200 p-2 rounded" >{color4}</h1>
